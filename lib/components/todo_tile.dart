@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_slidable/flutter_slidable.dart';
 
 class TodoTile extends StatelessWidget {
   final String taskName;
@@ -18,18 +17,25 @@ class TodoTile extends StatelessWidget {
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 10),
-      child: Slidable(
-        endActionPane: ActionPane(motion: StretchMotion(), extentRatio: 0.3, children: [
-          CustomSlidableAction(
-            onPressed: deleteFuntion,
-            backgroundColor: const Color.fromARGB(255, 176, 51, 42),
-            borderRadius: BorderRadius.circular(12),
-            child: Icon(
-              Icons.delete,
-              size: 30,
-            ),
-          )
-        ]),
+      child: Dismissible(
+        key: ValueKey(taskName),
+        direction: DismissDirection.endToStart,
+        onDismissed: (direction) {
+          deleteFuntion(context);
+        },
+        background: Container(
+          decoration: BoxDecoration(
+            color: const Color.fromARGB(255, 186, 64, 56),
+            borderRadius: BorderRadius.circular(12), // Bikin border melengkung
+          ),
+          padding: EdgeInsets.only(right: 25),
+          alignment: Alignment.centerRight,
+          child: Icon(
+            Icons.delete,
+            size: 30,
+            color: Colors.white,
+          ),
+        ),
         child: Container(
           padding: EdgeInsets.all(15),
           decoration: BoxDecoration(
