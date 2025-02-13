@@ -28,7 +28,11 @@ class _HomePageState extends State<HomePage> {
     });
     Navigator.of(context).pop();
   }
-
+  void deleteTask (index) {
+    setState(() {
+      todoList.removeAt(index);
+    });
+  }
   final _controller = TextEditingController();
 
   void createNewTask() {
@@ -124,7 +128,8 @@ class _HomePageState extends State<HomePage> {
               return TodoTile(
                   taskName: todoList[index][0],
                   taskCompleted: todoList[index][1],
-                  onChange: (value) => changeStatus(value, index));
+                  onChange: (value) => changeStatus(value, index),
+                  deleteFuntion: (context) => deleteTask(index));
             }));
   }
 }
