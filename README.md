@@ -7,8 +7,8 @@ Aplikasi Flutter yang memungkinkan pengguna mengelola daftar tugas dengan fitur 
 ### 📷 Screenshot Aplikasi  
 
 <p align="center">
-  <img src="assets/screenshot1.png" alt="Screenshot 1" width="300"/>
-  <img src="assets/screenshot2.png" alt="Screenshot 2" width="300"/>
+  <img src="assets/image/home_screen.png" alt="Screenshot 1" width="300"/>
+  <img src="assets/image/TaskForm.JPG" alt="Screenshot 2" width="300"/>
 </p>
 
 
