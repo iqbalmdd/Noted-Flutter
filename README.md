@@ -2,6 +2,15 @@
 
 Aplikasi Flutter yang memungkinkan pengguna mengelola daftar tugas dengan fitur **tambah, hapus, dan tandai tugas selesai**.
 
+## 📸 Screenshot
+
+### 🏠 Home Screen
+![Home Screen](assets/image/home_screen.png)
+
+### ➕ Dialog Tambah Tugas
+![Dialog Tambah Tugas](assets/image/TaskForm.JPG)
+
+
 ## 🚀 Fitur
 - ✅ Tambah tugas baru  
 - 🗑️ Hapus tugas dengan efek geser (Dismissible)  
@@ -15,4 +24,14 @@ Aplikasi Flutter yang memungkinkan pengguna mengelola daftar tugas dengan fitur 
 - **Provider** (State Management)
 - **Path Provider** (Penyimpanan Data)
 
-## 📂 Struktur Proyek
+### 📌 Cara Penggunaan
+
+- Klik **Floating Action Button (+)** untuk menambah tugas baru.  
+- Ketik nama tugas, lalu tekan **Save**.  
+- Geser tugas ke kiri untuk **menghapusnya**.  
+- Klik tugas untuk menandainya sebagai **selesai**.  
+
+### 📝 Todo List
+
+- ✅ Menambahkan fitur **Hive** untuk menyimpan tugas.  
+- ✅ Implementasi fitur **geser untuk menghapus tugas**.
