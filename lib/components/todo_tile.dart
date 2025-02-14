@@ -32,7 +32,7 @@ class TodoTile extends StatelessWidget {
           alignment: Alignment.centerRight,
           child: Icon(
             Icons.delete,
-            size: 30,
+            size: 32,
             color: Colors.white,
           ),
         ),
