@@ -1,4 +1,4 @@
-# 📌 MyApp
+# 📌 Noted
 
 Aplikasi Flutter yang memungkinkan pengguna mengelola daftar tugas dengan fitur **tambah, hapus, dan tandai tugas selesai**.
 
